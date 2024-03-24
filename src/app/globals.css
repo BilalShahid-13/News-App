@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("~bootstrap-icons/font/bootstrap-icons.css");
+
+:root {
+  --primary-color: rgb(245 158 11);
+  --search-color: #fbbf24;
+}
+
+@media (min-width: 1024px), (min-width: 768px) {
+  .navbar_elements {
+    @apply ease-in-out duration-500 cursor-pointer hover:bg-[var(--primary-color)] py-[6px] px-3 hover:text-white hover:rounded-full 
+      hover:shadow-md;
+  }
+
+  .v {
+    background-color: var(--primary-color);
+  }
+
+  #categories:hover #inner-categories {
+    display: flex;
+  }
+  .dropdown {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 5vh;
+    gap: 18px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    @apply text-zinc-800;
+    @apply z-[999];
+  
+  }
+  #inner-categories li:nth-child(1){
+    @apply mt-3;
+  }
+  #inner-categories li {
+    @apply justify-center items-center text-center py-2;
+    width: 100%;
+  }
+  #inner-categories li:hover{
+    display: block;
+    background-color: var(--search-color);
+  }
+  .ul_btn{
+    @apply  bg-[#fbbf24] rounded-full py-[6px] px-3
+  }
+}

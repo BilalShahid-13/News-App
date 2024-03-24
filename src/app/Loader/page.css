@@ -1,0 +1,53 @@
+#p1 {
+  animation: a linear infinite 700ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow;
+}
+
+#p2 {
+  animation: b linear infinite 750ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow;
+}
+#p3 {
+  animation: c linear infinite 1000ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow;
+}
+
+@keyframes a {
+  to {
+    transform: scale(1);
+    opacity: 0;
+    color: salmon;
+  }
+  from {
+    color: chartreuse;
+    opacity: 1;
+    transform: scale(1.4);
+  }
+}
+@keyframes b {
+  to {
+    transform: scale(1);
+    opacity: 0;
+    color: tomato;
+  }
+  from {
+    color: orchid;
+    opacity: 1;
+    transform: scale(1.4);
+  }
+}
+@keyframes c {
+  to {
+    transform: scale(1);
+    opacity: 0;
+    color: yellow;
+  }
+  from {
+    color: orangered;
+    opacity: 1;
+    transform: scale(1.4);
+  }
+}
